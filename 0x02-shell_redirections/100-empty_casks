@@ -1,2 +1,2 @@
 #!/bin/bash
-find .-empty -printf "%f\n"i
+[ -z "`find $dir -type f`" ] && echo "$dir is empty"
